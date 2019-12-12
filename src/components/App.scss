@@ -1,19 +1,28 @@
-ul {
-  list-style-type: none;
+.App-header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
+  color: white;
+  justify-content: space-between;
+  background-color: #282c34;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
 
-li {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-  max-width: 28%;
-  margin: 20px;
-  flex-direction: column;
+  li {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: 28%;
+    margin: 20px;
+    flex-direction: column;
+  }
 }
 /* 
 .App-logo {
@@ -26,14 +35,6 @@ li {
     animation: App-logo-spin infinite 20s linear;
   }
 } */
-
-.App-header {
-  display: flex;
-  color: white;
-  justify-content: space-between;
-  background-color: #282c34;
-  height: 100%;
-}
 
 .App-link {
   color: #61dafb;
@@ -63,14 +64,24 @@ li {
   width: 100%;
   border: none;
   font-size: 1rem;
+  padding: 0 15px;
 }
 .spm-RecipesGridContainer {
   .spm-RecipesList {
-    margin: 5% auto;
-
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10% auto;
     max-width: 1000px;
     width: auto;
+    justify-content: center;
     li {
+      display: flex;
+      justify-content: center;
+      flex-grow: 1;
+      max-width: 28%;
+      margin: 20px;
+      flex-direction: column;
       min-width: 233px;
       .spm-Recipe-img {
         max-width: 100%;
