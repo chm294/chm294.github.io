@@ -1,16 +1,19 @@
-.App {
-}
-
 ul {
   list-style-type: none;
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
+
 li {
-  width: 60px;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  max-width: 28%;
   margin: 20px;
+  flex-direction: column;
 }
 /* 
 .App-logo {
@@ -34,11 +37,6 @@ li {
 
 .App-link {
   color: #61dafb;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .spm-navbar {
@@ -65,4 +63,19 @@ img {
   width: 100%;
   border: none;
   font-size: 1rem;
+}
+.spm-RecipesGridContainer {
+  .spm-RecipesList {
+    margin: 5% auto;
+
+    max-width: 1000px;
+    width: auto;
+    li {
+      min-width: 233px;
+      .spm-Recipe-img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
 }

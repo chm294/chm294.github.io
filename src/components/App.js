@@ -1,7 +1,76 @@
 import React from 'react';
 import NavBarContainer from './NavBar/NavBarContainer';
 import SearchContainer from './SearchRecipes/SearchContainer';
-import './App.css';
+import RecipesGridContainer from './RecipesGrid/RecipesGridContainer';
+import './App.scss';
+
+const allRecipes = [
+  {
+    title: 'beef brisket',
+    lastUpdated: '12/8/19',
+    keywords: ['meat', 'protein', 'smoked'],
+    cooktime: 8,
+    difficulty: 'expert',
+    gridImg: './static/spmBrisket.pngg'
+  },
+  {
+    title: 'beef brisket',
+    lastUpdated: '12/8/19',
+    keywords: ['meat', 'protein', 'smoked'],
+    cooktime: 8,
+    difficulty: 'expert',
+    gridImg: './static/spmBrisket.pngg'
+  },
+  {
+    title: 'beef brisket',
+    lastUpdated: '12/8/19',
+    keywords: ['meat', 'protein', 'smoked'],
+    cooktime: 8,
+    difficulty: 'expert',
+    gridImg: './static/spmBrisket.pngg'
+  },
+  {
+    title: 'beef brisket',
+    lastUpdated: '12/8/19',
+    keywords: ['meat', 'protein', 'smoked'],
+    cooktime: 8,
+    difficulty: 'expert',
+    gridImg: './static/spmBrisket.pngg'
+  },
+  {
+    title: 'beef brisket',
+    lastUpdated: '12/8/19',
+    keywords: ['meat', 'protein', 'smoked'],
+    cooktime: 8,
+    difficulty: 'expert',
+    gridImg: './static/spmBrisket.pngg'
+  },
+  {
+    title: 'beef brisket',
+    lastUpdated: '12/8/19',
+    keywords: ['meat', 'protein', 'smoked'],
+    cooktime: 8,
+    difficulty: 'expert',
+    gridImg: './static/spmBrisket.pngg'
+  },
+  {
+    title: 'beef brisket',
+    lastUpdated: '12/8/19',
+    keywords: ['meat', 'protein', 'smoked'],
+    cooktime: 8,
+    difficulty: 'expert',
+    gridImg: './static/spmBrisket.pngg'
+  },
+  {
+    title: 'beef brisket',
+    lastUpdated: '12/8/19',
+    keywords: ['meat', 'protein', 'smoked'],
+    cooktime: 8,
+    difficulty: 'expert',
+    gridImg: './static/spmBrisket.pngg'
+  },
+
+]
 
 function App() {
   return (
@@ -11,7 +80,9 @@ function App() {
         <SearchContainer />
         <NavBarContainer />
       </header>
-      {/* <img className={`spm-background`} src={require('../static/spmBrisket.png')} alt="background-brisket"/> */}
+      <RecipesGridContainer
+        allRecipes={allRecipes}
+      />
     </div>
   );
 }
