@@ -6,15 +6,18 @@ import {
 
 class NavBarContainer extends React.Component {
     render() {
-        return <nav className={`spm-navbar`}>
+        return <nav className={`spm-NavBarContainer`}>
             <Link to='/'>
-                <h1 className={`spm-title`}> Spencer's Meat </h1>
+                <h1 className={`spm-NavBarContainer-title`}> Spencer's Meat </h1>
             </Link>
             {/* <SearchContainer /> */}
             <ul>
-                <li>basics</li>
-                <li>recipes</li>
-                <li>welcome</li>
+                <Link to="/basics">
+                    <li className={`spm-NavBarContainer-basics`}>Essentials</li>
+                </Link>
+                <Link to="/recipes">
+                    <li className={`spm-NavBarContainer-recipes`}>Recipes</li>
+                </Link>
             </ul>
         </nav>
     }

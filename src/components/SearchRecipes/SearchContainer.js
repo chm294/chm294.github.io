@@ -6,7 +6,7 @@ class SearchContainer extends React.Component {
             <label htmlFor="search">
                 <input
                     className="spm-search"
-                    placeholder="search"
+                    placeholder="HUNGRY?"
                     id="search"
                     type="search"
                 />

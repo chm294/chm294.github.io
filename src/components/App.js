@@ -7,8 +7,9 @@ import {
 import NavBarContainer from './NavBar/NavBarContainer';
 import RecipesGridContainer from './RecipesGrid/RecipesGridContainer';
 import './App.scss';
-import RecipePageContainer from './Recipes/RecipePageContainer';
+import RecipePageContainer from './RecipePage/RecipePageContainer';
 import AllRecipes from '../data/Recipes';
+import Basics from './Basics/Basics';
 
 class App extends React.Component {
   constructor(props) {
@@ -64,15 +65,21 @@ class App extends React.Component {
                   />
                 </Route>
               })}
-              <Route path="/">
+              <Route path="/basics">
+                  <Basics/>
+              </Route>
+              <Route path="/recipes">
                   <RecipesGridContainer
                     isMobile={ isMobile }
                     isResponsive={ isResponsive }
                     allRecipes={AllRecipes}
                   />
               </Route>
+              <Route path="/">
+                  <div>this will be the welcome page</div>
+              </Route>
             </Switch>
-            </div>
+          </div>
         </div>
       </Router>
     );

@@ -28,7 +28,7 @@ const AllRecipes = [
         parts: [
             {
                 title: 'Biang Biang Noodles',
-                ingredients : [{}],
+                ingredients : [],
                 method: ['Mix dough and bread for 10 min until taut, slightly sticky',
                 'Divide into 4, roll each into a log and slightly flatten each one ',
                 'Coat in neutral oil and rest for 30 mins',
@@ -56,16 +56,12 @@ const AllRecipes = [
         parts: [
             {
                 title: 'Deep Dish Pizza',
-                ingredients : [{
-                    dough: ['flour', 'yeast'],
-                    sauce: ['canned tomatoes'],
-                    toppings: ['artichokes', 'basil', 'parmesian cheese']
-                }],
+                ingredients : ['flour', 'yeast', 'canned tomatoes'],
                 method: [
                     'First ya make a da dough',
                     'Squish Squish',
                     'Mush',
-                ]
+                    ]
             }
         ],
         keywords: ['carbs', 'italian', 'comfort food'],

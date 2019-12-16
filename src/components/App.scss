@@ -48,39 +48,51 @@ ul {
   color: #61dafb;
 }
 
-.spm-navbar {
+.spm-NavBarContainer {
   display: flex;
   justify-content: space-between;
   width: 100%;
   color: white;
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
+  &-title {
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  &-basics {
+    text-decoration: none;
+    color: white;
+  }
 }
 
-.spm-title {
-  margin: 20px;
-  color: white;
-  text-decoration: none;
-}
-
-.spm-searchContianer {
-  flex-grow: 2;
-  color: white;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-}
-
-.spm-search {
-  background-image: url(/universal/images-v6/icons/icon-searchqueries-20-dark.png);
-  background-color: #282c34;
-  color: white;
-  height: 100%;
-  width: 80%;
-  border: none;
-  font-size: 1rem;
-  padding: 0 15px;
-}
 .spm-RecipesGridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: auto;
+    margin: auto;
+    min-width: 290px;
+    .spm-searchContianer {
+      color: #282c34;
+      margin: auto;
+      width: 90%;
+      height: 3vw;
+      min-height: 45px;
+      border: 1px solid lightgrey;
+      border-radius: 8px;
+      padding: 6px; //this is to prevent border radius from cutting off;
+      .spm-search {
+        background-image: url(/universal/images-v6/icons/icon-searchqueries-20-dark.png);
+        height: 100%;
+        width: 100%;
+        border: none;
+        font-size: 1rem;
+        padding: 0 15px;
+      }
+    }
+
   .spm-RecipesList {
     display: flex;
     flex-wrap: wrap;
@@ -125,16 +137,47 @@ ul {
   }
 }
 
-.spm-RecipePageContainer-title {
-  text-align: center;
+.spm-RecipePageContainer {
+  &-title {
+    text-align: center;
+    margin: auto;
+    z-index: 100;
+    // font-family: Futura;
+    letter-spacing: .05em;
+    line-height: 31px;
+    height: auto;
+    h3 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+  }
+  &-section {
+    display: flex;
+    justify-content: space-evenly;
+    .spm-Part {
+      display: flex;
+      .spm-ingredients {
+        flex-grow: 1;
+      }
+      .spm-method {
+        flex-grow: 2;
+      }
+    }
+  }
+}
+
+.spm-Basics {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
   margin: auto;
-  z-index: 100;
-  // font-family: Futura;
-  letter-spacing: .05em;
-  line-height: 31px;
-  height: auto;
-  h3 {
-    font-size: 3em;
-    margin-bottom: 10px;
+  &-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 5%;
+    h5 {
+      margin: 0;
+    }
   }
 }
