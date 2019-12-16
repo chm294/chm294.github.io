@@ -2,7 +2,6 @@ import React from 'react';
 import Recipe from './Recipe';
 
 class RecipesList extends React.Component {
-    debugger;
     render() {
         return <ul className="spm-RecipesList">
             {this.props.allRecipes.map((recipe) => {
