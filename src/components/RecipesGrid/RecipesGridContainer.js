@@ -3,9 +3,14 @@ import RecipesList from './RecipesList';
 import SearchContainer from '../SearchRecipes/SearchContainer';
 
 class RecipesGridContainer extends React.Component {
+    filterRecipes() {
+    }
+
     render() {
         return <div className="spm-RecipesGridContainer">
-            <SearchContainer />
+            <SearchContainer 
+                allRecipes={this.props.allRecipes}
+            />
             <RecipesList
                 allRecipes={this.props.allRecipes}
             />

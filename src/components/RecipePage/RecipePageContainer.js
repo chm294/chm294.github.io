@@ -21,6 +21,9 @@ class RecipePageContainer extends React.Component {
         } = this.props.recipe;
 
 return <div className='spm-RecipePageContainer'>
+            <div className="spm-RecipePageContainer-banner">
+                <img src={require(`../static/imgs/${this.props.recipe.path.toLowerCase()}.png`)} />
+            </div>
             <div className={`spm-RecipePageContainer-title`}>
                 <h3>
                     {title}

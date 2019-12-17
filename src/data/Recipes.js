@@ -71,54 +71,120 @@ const AllRecipes = [
         related: [],
         pairsWith: [],
     },
-    // {
-    //   title: 'beef brisket',
-    //   lastUpdated: '12/8/19',
-    //   keywords: ['meat', 'protein', 'smoked'],
-    //   cooktime: 8,
-    //   difficulty: 'expert',
-    //   path: 'brisket',
-    // },
-    // {
-    //   title: 'beef brisket',
-    //   lastUpdated: '12/8/19',
-    //   keywords: ['meat', 'protein', 'smoked'],
-    //   cooktime: 8,
-    //   difficulty: 'expert',
-    //   path: 'brisket',
-    // },
-    // {
-    //   title: 'beef brisket',
-    //   lastUpdated: '12/8/19',
-    //   keywords: ['meat', 'protein', 'smoked'],
-    //   cooktime: 8,
-    //   difficulty: 'expert',
-    //   path: 'brisket',
-    // },
-    // {
-    //   title: 'beef brisket',
-    //   lastUpdated: '12/8/19',
-    //   keywords: ['meat', 'protein', 'smoked'],
-    //   cooktime: 8,
-    //   difficulty: 'expert',
-    //   path: 'brisket',
-    // },
-    // {
-    //   title: 'beef brisket',
-    //   lastUpdated: '12/8/19',
-    //   keywords: ['meat', 'protein', 'smoked'],
-    //   cooktime: 8,
-    //   difficulty: 'expert',
-    //   path: 'brisket',
-    // },
-    // {
-    //   title: 'beef brisket',
-    //   lastUpdated: '12/8/19',
-    //   keywords: ['meat', 'protein', 'smoked'],
-    //   cooktime: 8,
-    //   difficulty: 'expert',
-    //   path: 'brisket',
-    // },
+    {
+        title: 'Basil Ricotta Gnocchi',
+        lastUpdated: '12/8/19',
+        description: '',
+        tools: ['', ''],
+        parts: [
+            {
+                title: 'Basil Ricotta Gnocchi',
+                ingredients : [],
+                method: ['step 1', 'step 2', 'step 3']
+            }
+        ],
+        keywords: ['italian', 'carbs', 'comfort food'],
+        cooktime: 60,
+        difficulty: 'moderate',
+        path: 'basil-ricotta-gnocchi',
+        related: [],
+        pairsWith: [],
+    },
+    {
+        title: 'Spencer\'s Smoked Brisket',
+        lastUpdated: '12/8/19',
+        description: '',
+        tools: ['', ''],
+        parts: [
+            {
+                title: 'Spencer\'s Smoked Brisket',
+                ingredients : [],
+                method: ['step 1', 'step 2', 'step 3']
+            }
+        ],
+        keywords: ['jewish', 'protein', 'beef'],
+        cooktime: 60,
+        difficulty: 'expert',
+        path: 'brisket',
+        related: [],
+        pairsWith: [],
+    },
+    {
+        title: 'Chocolate Mousse Pie',
+        lastUpdated: '12/8/19',
+        description: '',
+        tools: ['', ''],
+        parts: [
+            {
+                title: 'Chocolate Mousse Pie',
+                ingredients : [],
+                method: ['step 1', 'step 2', 'step 3']
+            }
+        ],
+        keywords: ['dessert', 'sweets'],
+        cooktime: 60,
+        difficulty: 'difficulty',
+        path: 'chocolate-mousse-pie',
+        related: [],
+        pairsWith: [],
+    },
+    {
+        title: 'Creamy Tomato Soup',
+        lastUpdated: '12/8/19',
+        description: '',
+        tools: ['', ''],
+        parts: [
+            {
+                title: 'Creamy Tomato Soup',
+                ingredients : [],
+                method: ['step 1', 'step 2', 'step 3']
+            }
+        ],
+        keywords: ['soup'],
+        cooktime: 60,
+        difficulty: 'easy',
+        path: 'creamy-tomato-soup',
+        related: [],
+        pairsWith: [],
+    },
+    {
+        title: 'Kouign Amann',
+        lastUpdated: '12/8/19',
+        description: '',
+        tools: ['', ''],
+        parts: [
+            {
+                title: 'Kouign Amann',
+                ingredients : [],
+                method: ['step 1', 'step 2', 'step 3']
+            }
+        ],
+        keywords: ['dessert', 'sweet', 'pastry', 'baking'],
+        cooktime: 60,
+        difficulty: 'expert',
+        path: 'kouign-amann',
+        related: [],
+        pairsWith: [],
+    },
+    {
+        title: 'Sous Vide Pork',
+        lastUpdated: '12/8/19',
+        description: '',
+        tools: ['', ''],
+        parts: [
+            {
+                title: 'Sous Vide Pork',
+                ingredients : [],
+                method: ['step 1', 'step 2', 'step 3']
+            }
+        ],
+        keywords: ['protein'],
+        cooktime: 60,
+        difficulty: 'easy',
+        path: 'pork',
+        related: [],
+        pairsWith: [],
+    }
   ];
 
   export default AllRecipes;

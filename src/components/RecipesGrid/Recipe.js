@@ -17,6 +17,7 @@ import {
                     />
                 </div>
                 <div className="spm-Recipe-label">{this.props.recipe.title}</div>
+                <div className="spm-Recipe-date">{this.props.recipe.lastUpdated}</div>
                 </Link>
         </li>
     }

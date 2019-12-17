@@ -2,6 +2,29 @@ ul {
   padding: 0;
   list-style-type: none;
 }
+
+// .parallax {
+//   perspective: 1px;
+//   height: 100vh;
+//   overflow-x: hidden;
+//   overflow-y: auto;
+// }
+
+// .parallax_layer {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+// }
+
+// .parallax_layer--base {
+//   transform: translateZ(0);
+// }
+// .parallax__layer--back {
+//   transform: translateZ(-1px);
+// }
+
 .spm-App {
   .App-header {
     display: flex;
@@ -13,6 +36,7 @@ ul {
     max-height: 88px;
     position: fixed;
     top: 0;
+    z-index: 10000;
     ul {
       display: flex;
       flex-wrap: wrap;
@@ -29,7 +53,7 @@ ul {
     }
   }
   &-mainContent {
-    margin: 150px auto;
+    margin: 88px auto;
   }
 }
 /* 
@@ -61,7 +85,10 @@ ul {
     text-decoration: none;
   }
   
-  &-basics {
+  &-link {
+    h1{
+      text-decoration: none;
+    }
     text-decoration: none;
     color: white;
   }
@@ -109,12 +136,16 @@ ul {
       flex-direction: column;
       min-width: 290px;
       a {
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 800;
+        text-decoration: none;        
         color: #282c34;
         .spm-Recipe-label {
           margin: 5px 0;
+          font-weight: 800;
+          font-size: 20px;
+        }
+        .spm-Recipe-date {
+          font-weight: lighter;
+          font-size:12px;
         }
       }
       .spm-Recipe-imgCover {
@@ -138,6 +169,17 @@ ul {
 }
 
 .spm-RecipePageContainer {
+  &-banner {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    img {
+      width: 100%;
+      transform: scale(1.1, 1.1);
+    }
+  }
   &-title {
     text-align: center;
     margin: auto;
@@ -180,4 +222,11 @@ ul {
       margin: 0;
     }
   }
+}
+
+.spm-Homepage {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 30px;
 }

@@ -10,7 +10,7 @@ import './App.scss';
 import RecipePageContainer from './RecipePage/RecipePageContainer';
 import AllRecipes from '../data/Recipes';
 import Basics from './Basics/Basics';
-
+import Homepage from './Welcome/Homepage';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -76,7 +76,7 @@ class App extends React.Component {
                   />
               </Route>
               <Route path="/">
-                  <div>this will be the welcome page</div>
+                  <Homepage />
               </Route>
             </Switch>
           </div>

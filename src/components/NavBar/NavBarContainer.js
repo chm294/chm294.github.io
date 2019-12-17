@@ -10,13 +10,12 @@ class NavBarContainer extends React.Component {
             <Link to='/'>
                 <h1 className={`spm-NavBarContainer-title`}> Spencer's Meat </h1>
             </Link>
-            {/* <SearchContainer /> */}
             <ul>
                 <Link to="/basics">
-                    <li className={`spm-NavBarContainer-basics`}>Essentials</li>
+                    <li className={`spm-NavBarContainer-link`}>Essentials</li>
                 </Link>
                 <Link to="/recipes">
-                    <li className={`spm-NavBarContainer-recipes`}>Recipes</li>
+                    <li className={`spm-NavBarContainer-link`}>Recipes</li>
                 </Link>
             </ul>
         </nav>
