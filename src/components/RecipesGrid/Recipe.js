@@ -12,7 +12,7 @@ import {
                         onClick={() => {
                         }}
                         className={`spm-Recipe-img`} 
-                        src={require(`../static/imgs/${this.props.recipe.path.toLowerCase()}.png`)}
+                        src={require(`../static/imgs/${this.props.recipe.path}.png`)}
                         alt={`image of ${this.props.recipe.title}`}
                     />
                 </div>

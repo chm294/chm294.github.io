@@ -45,6 +45,12 @@ class App extends React.Component {
     window.addEventListener("resize", this.updateDimensions.bind(this));
   }
 
+  /**
+   * instagram handle in navbar
+   * redesign navbar to burger
+   * http://www.mikiyakobayashi.com/projects
+   */
+
   render() {
     const { isMobile, isResponsive } = this.props;
     return (
