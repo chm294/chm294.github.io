@@ -8,6 +8,7 @@ class RecipesList extends React.Component {
                 return <Recipe
                             key={recipe.title}
                             recipe={recipe}
+                            isMobile={this.props.isMobile}
                         />
             })}
         </ul>

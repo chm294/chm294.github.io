@@ -5,7 +5,7 @@ import {
 
   class Recipe extends React.Component {
     render() {
-        return <li className="spm-Recipe">
+        return <li className={`${this.props.isMobile ? 'spm-Recipe-mobile' : 'spm-Recipe'}`}>
             <Link to={`/${this.props.recipe.path}`}>
                 <div className="spm-Recipe-imgCover">
                     <img
@@ -15,9 +15,11 @@ import {
                         src={require(`../static/imgs/${this.props.recipe.path}.png`)}
                         alt={`image of ${this.props.recipe.title}`}
                     />
+                    <div className="spm-Recipe-titleContainer">
+                        <div className="spm-Recipe-label">{this.props.recipe.title}</div>
+                        <div className="spm-Recipe-date">{this.props.recipe.lastUpdated}</div>
+                    </div> 
                 </div>
-                <div className="spm-Recipe-label">{this.props.recipe.title}</div>
-                <div className="spm-Recipe-date">{this.props.recipe.lastUpdated}</div>
                 </Link>
         </li>
     }

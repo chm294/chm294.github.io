@@ -18,7 +18,11 @@ class App extends React.Component {
       isMobile: false,
       isResponsive: false,
       path: '',
+      showRecipes: AllRecipes,
     };
+
+    this.filterRecipes = this.filterRecipes.bind(this);
+    this.updateLocationPath = this.updateLocationPath.bind(this);
   }
 
   updateDimensions() {
@@ -28,7 +32,7 @@ class App extends React.Component {
       this.setState({
         isMobile: false,
         isResponsive: true,
-      });
+      }); 
     } else {
       this.setState({
         isMobile: false,
@@ -36,6 +40,26 @@ class App extends React.Component {
       })
     }
   }
+
+  filterRecipes(searchString) {
+    searchString = searchString.toLowerCase();
+    const matchingRecipes = [];
+    
+    this.props.allRecipes.map((recipe) => {
+        if(recipe.title.toLowerCase().includes(searchString)) {
+            matchingRecipes.push(recipe);
+        } else if (recipe.keywords.some((keyword) => {
+            return searchString === keyword.toLowerCase();
+        })) {
+            matchingRecipes.push(recipe);
+        };
+    });
+    this.setState({ showRecipes : matchingRecipes });
+}
+
+updateLocationPath() {
+  this.setState({ path: window.location.path })
+}
 
   /**
    * Add event listener for responsiveness
@@ -60,6 +84,7 @@ class App extends React.Component {
             <NavBarContainer
               isMobile={ isMobile }
               isResponsive={ isResponsive }
+              pathName={window.location.pathname}
             />
           </header>
           <div className="spm-App-mainContent">
@@ -75,14 +100,15 @@ class App extends React.Component {
                   <Basics/>
               </Route>
               <Route path="/recipes">
+                  <Homepage />
+              </Route>
+              <Route path="/">
                   <RecipesGridContainer
                     isMobile={ isMobile }
                     isResponsive={ isResponsive }
-                    allRecipes={AllRecipes}
+                    allRecipes={this.state.showRecipes}
+                    filterRecipes={this.filterRecipes}
                   />
-              </Route>
-              <Route path="/">
-                  <Homepage />
               </Route>
             </Switch>
           </div>
